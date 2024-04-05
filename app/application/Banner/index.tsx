@@ -1,19 +1,19 @@
-import BannerFuncitonButton from "./BannerButton";
+import BannerFuncitonDeatails from "./BannerDetails";
 import BannerFuncitonImage from "./BannerImage";
 import BannerFuncitonRoot from "./BannerRoot";
 
 const Banner = {
   Root: BannerFuncitonRoot,
   Image: BannerFuncitonImage,
-  Button: BannerFuncitonButton
+  Details: BannerFuncitonDeatails
 }
 
 const BannerContent = Banner.Root
 const BannerImage = Banner.Image
-const BannerButton = Banner.Button
+const BannerDetails = Banner.Details
 
 export {
   BannerContent,
   BannerImage,
-  BannerButton
+  BannerDetails
 }

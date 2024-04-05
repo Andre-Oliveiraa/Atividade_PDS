@@ -1,12 +1,11 @@
-import { DropdownMenu } from "@radix-ui/react-dropdown-menu";
+import { DropdownMenu, DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
 import {
   BannerContent,
   BannerImage,
-  BannerButton
+  BannerDetails
 } from "./application/Banner";
 
 import { Eye, FileText } from 'lucide-react'
-import { DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 
 export default function Home() {
   return (
@@ -17,15 +16,15 @@ export default function Home() {
           src="/Banner.jpg"
         />
         <div className="flex gap-3">
-          <BannerButton>
+          <BannerDetails>
             <Eye />
             <p className="font-bold">View</p>
-          </BannerButton>
+          </BannerDetails>
 
-          <BannerButton>
+          <BannerDetails>
             <FileText />
             <p className="font-bold">Documentos</p>
-          </BannerButton>
+          </BannerDetails>
         </div>
       </BannerContent>
     </div>
