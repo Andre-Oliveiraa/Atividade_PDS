@@ -1,13 +1,13 @@
-import { HtmlHTMLAttributes, ReactNode } from "react"
+import { ReactNode } from "react"
 
-interface BannerFuncitonDeatailsProps extends HtmlHTMLAttributes<HTMLDetailsElement> {
+interface BannerFuncitonDeatailsProps{
   children: ReactNode
 }
 
 export default function BannerFuncitonDeatails({ children }: BannerFuncitonDeatailsProps) {
   return (
-    <details className="p-3 min-h-10 min-w-10 rounded-md text-sm bg-zinc-100 flex items-center gap- hover:bg-zinc-800 hover:text-zinc-200 transition-all">
+    <div className="p-3 h-full min-w-10 max-w-50 rounded-md text-sm bg-zinc-100 flex flex-col justify-center gap-3 hover:bg-zinc-200 text-zinc-900 transition-all">
       {children}
-    </details>
+    </div>
   )
 }
