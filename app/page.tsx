@@ -70,7 +70,7 @@ export default function Home() {
       <HeaderContent>
         <a href="https://www.bc.sc.gov.br/servicos.cfm" target="_blank" rel="noopener noreferrer">
           <Image
-          width={100}
+          width={80}
           height={100}
           src="/Balneario.png" 
           alt="" 
