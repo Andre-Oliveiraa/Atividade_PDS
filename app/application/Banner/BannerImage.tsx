@@ -8,8 +8,8 @@ interface BannerFuncitonImageProps {
 export default function BannerFuncitonImage({ src, className }: BannerFuncitonImageProps) {
   return (
     <Image
-      width={100}
-      height={100}
+      width={600}
+      height={600}
       alt="Null"
       src={src}
       className={`${className}`}
