@@ -10,6 +10,7 @@ import {
 } from './application/Header'
 
 import { FileText, Github, BadgeInfo, SquareArrowOutUpRight } from 'lucide-react'
+import Image from "next/image";
 
 interface BannerComplitProps {
   children: ReactNode,
@@ -68,7 +69,12 @@ export default function Home() {
     <div className="invisible xl:visible">
       <HeaderContent>
         <a href="https://www.bc.sc.gov.br/servicos.cfm" target="_blank" rel="noopener noreferrer">
-          <img src="/Balneario.png" alt="" className="h-20" />
+          <Image
+          width={100}
+          height={100}
+          src="/Balneario.png" 
+          alt="" 
+          className="h-20" />
         </a>
         <div className="flex flex-col items-center  ">
           <p className="text-3xl text-cyan-700 font-extrabold">Serviços da Prefeitura</p>
@@ -87,7 +93,7 @@ export default function Home() {
           src="/Aprova.png"
         >
           <LinkIcons link="https://aprovafacilbc.com.br/" />
-          <p className="font-semibold">O "Aprova Fácil" é um sistema utilizado pela Prefeitura de Balneário Camboriú para facilitar e agilizar o processo de análise e aprovação de projetos de construção civil. Esse sistema é uma ferramenta digital que permite aos cidadãos e profissionais da área submeterem seus projetos de obras de forma online, eliminando a necessidade de deslocamento até os órgãos municipais responsáveis.</p>
+          <p className="font-semibold">O Aprova Fácil é um sistema utilizado pela Prefeitura de Balneário Camboriú para facilitar e agilizar o processo de análise e aprovação de projetos de construção civil. Esse sistema é uma ferramenta digital que permite aos cidadãos e profissionais da área submeterem seus projetos de obras de forma online, eliminando a necessidade de deslocamento até os órgãos municipais responsáveis.</p>
           <DocumentIcon />
           <ul className="pl-5 list-disc font-semibold">
             <li>Formulários de requerimento específicos</li>
@@ -106,7 +112,7 @@ export default function Home() {
           src="/Cadastro.png"
         >
           <LinkIcons link="https://www.bc.sc.gov.br/atualizacao-de-cadastro.cfm" />
-          <p className="font-semibold">A "Atualização de Cadastro" da Prefeitura de Balneário Camboriú é um procedimento realizado para manter atualizadas as informações dos contribuintes e cidadãos que possuem cadastro junto aos órgãos municipais. Esse processo é importante para garantir a correta identificação e comunicação com os contribuintes, além de subsidiar a gestão municipal com dados atualizados sobre a população e os imóveis do município.</p>
+          <p className="font-semibold">A Atualização de Cadastro da Prefeitura de Balneário Camboriú é um procedimento realizado para manter atualizadas as informações dos contribuintes e cidadãos que possuem cadastro junto aos órgãos municipais. Esse processo é importante para garantir a correta identificação e comunicação com os contribuintes, além de subsidiar a gestão municipal com dados atualizados sobre a população e os imóveis do município.</p>
           <DocumentIcon />
           <div className="grid grid-cols-2 gap-2">
             <ul className="pl-5 list-disc font-semibold">
@@ -130,7 +136,7 @@ export default function Home() {
           src="/Certidao.png"
         >
           <LinkIcons link="http://tributos.bc.sc.gov.br:8080/sefaz/jsp/cnd/index.jsp" />
-          <p className="font-semibold">A "Certidão Negativa de Débito" de Balneário Camboriú é um documento emitido pela Prefeitura Municipal de Balneário Camboriú, localizada no estado de Santa Catarina, Brasil. Esta certidão atesta a inexistência de débitos fiscais, como IPTU (Imposto Predial e Territorial Urbano), ISS (Imposto Sobre Serviços) e outras taxas municipais, em nome de uma pessoa física ou jurídica naquele município.</p>
+          <p className="font-semibold">A Certidão Negativa de Débito de Balneário Camboriú é um documento emitido pela Prefeitura Municipal de Balneário Camboriú, localizada no estado de Santa Catarina, Brasil. Esta certidão atesta a inexistência de débitos fiscais, como IPTU (Imposto Predial e Territorial Urbano), ISS (Imposto Sobre Serviços) e outras taxas municipais, em nome de uma pessoa física ou jurídica naquele município.</p>
           <DocumentIcon />
           <ul className="pl-5 list-disc font-semibold">
             <li>Requerimento Padrão</li>
@@ -159,7 +165,7 @@ export default function Home() {
           link="http://tributos.bc.sc.gov.br:8080/sefaz/jsp/externo/debitoContigencia/consulta.jsp"
         >
           <LinkIcons link="http://tributos.bc.sc.gov.br:8080/sefaz/jsp/externo/debitoContigencia/consulta.jsp" />
-          <p className="font-semibold">"COSIP" é a Contribuição para Custeio do Serviço de Iluminação Pública, que é um tributo cobrado pelas prefeituras municipais no Brasil para financiar os serviços de iluminação pública nas cidades. Cada município pode ter sua própria legislação e regulamentação sobre o COSIP, incluindo taxas e formas de arrecadação.</p>
+          <p className="font-semibold">COSIP é a Contribuição para Custeio do Serviço de Iluminação Pública, que é um tributo cobrado pelas prefeituras municipais no Brasil para financiar os serviços de iluminação pública nas cidades. Cada município pode ter sua própria legislação e regulamentação sobre o COSIP, incluindo taxas e formas de arrecadação.</p>
           <DocumentIcon />
           <ul className="pl-5 list-disc font-semibold">
             <li>Identificação pessoal</li>
@@ -174,7 +180,7 @@ export default function Home() {
           src="/Boletim.png"
         >
           <LinkIcons link="http://tributos.bc.sc.gov.br:8080/sefaz/jsp/externo/debitoContigencia/consulta.jsp" />
-          <p className="font-semibold">O "Emissão Boletim de Débitos de Balneário Camboriú" é um documento fornecido pela prefeitura de Balneário Camboriú, situada em Santa Catarina. Esse boletim é elaborado para apresentar detalhes sobre os débitos vinculados a impostos, taxas ou serviços municipais de propriedades localizadas dentro da área de jurisdição da prefeitura. Ele é uma ferramenta importante para os proprietários de imóveis verificarem e acompanharem quaisquer obrigações fiscais pendentes relacionadas às suas propriedades, como IPTU e taxas de serviços municipais. Ao emitir esse boletim, a prefeitura fornece transparência e facilidade para os contribuintes gerenciarem suas responsabilidades financeiras em relação ao município.</p>
+          <p className="font-semibold">O Emissão Boletim de Débitos de Balneário Camboriú é um documento fornecido pela prefeitura de Balneário Camboriú, situada em Santa Catarina. Esse boletim é elaborado para apresentar detalhes sobre os débitos vinculados a impostos, taxas ou serviços municipais de propriedades localizadas dentro da área de jurisdição da prefeitura. Ele é uma ferramenta importante para os proprietários de imóveis verificarem e acompanharem quaisquer obrigações fiscais pendentes relacionadas às suas propriedades, como IPTU e taxas de serviços municipais. Ao emitir esse boletim, a prefeitura fornece transparência e facilidade para os contribuintes gerenciarem suas responsabilidades financeiras em relação ao município.</p>
           <DocumentIcon />
           <ul className="pl-5 list-disc font-semibold">
             <li>Documento de identificação pessoal do solicitante</li>
@@ -189,7 +195,7 @@ export default function Home() {
           src="/Emissao.png"
         >
           <LinkIcons link="http://tributos.bc.sc.gov.br:8080/sefaz/jsp/externo/debitoContigencia/consulta.jsp" />
-          <p className="font-semibold">A "Emissão de Guias para Pagamento de Balneário Camboriú" é um procedimento administrativo que envolve a emissão de documentos ou guias detalhando valores a serem pagos, como impostos, taxas ou tarifas, destinados a serem pagos na cidade de Balneário Camboriú.</p>
+          <p className="font-semibold">A Emissão de Guias para Pagamento de Balneário Camboriú é um procedimento administrativo que envolve a emissão de documentos ou guias detalhando valores a serem pagos, como impostos, taxas ou tarifas, destinados a serem pagos na cidade de Balneário Camboriú.</p>
           <DocumentIcon />
           <ul className="pl-5 list-disc font-semibold">
             <li>Identificação pessoal</li>
@@ -203,7 +209,7 @@ export default function Home() {
           src="/Fila.png"
         >
           <LinkIcons link="https://www.bc.sc.gov.br/conteudo.cfm?caminho=fila-unica" />
-          <p className="font-semibold">A "Fila Única" em Balneário Camboriú se refere a um sistema adotado pela prefeitura da cidade para a gestão e organização das filas de espera em serviços públicos, como é o caso de consultas médicas e procedimentos de saúde. O objetivo principal desse sistema é promover a eficiência, transparência e equidade no acesso aos serviços de saúde oferecidos pelo município.</p>
+          <p className="font-semibold">A Fila Única em Balneário Camboriú se refere a um sistema adotado pela prefeitura da cidade para a gestão e organização das filas de espera em serviços públicos, como é o caso de consultas médicas e procedimentos de saúde. O objetivo principal desse sistema é promover a eficiência, transparência e equidade no acesso aos serviços de saúde oferecidos pelo município.</p>
           <DocumentIcon />
           <ul className="pl-5 list-disc font-semibold">
             <li>Documento de identidade</li>
