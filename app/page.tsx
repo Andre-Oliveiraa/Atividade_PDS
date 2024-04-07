@@ -77,7 +77,7 @@ function DocumentIcon() {
 
 export default function Home() {
   return (
-    <div className="invisible xl:visible">
+    <div className="invisible xl:visible ">
       <HeaderContent>
         <a href="https://www.bc.sc.gov.br/servicos.cfm" target="_blank" rel="noopener noreferrer">
           <Image
