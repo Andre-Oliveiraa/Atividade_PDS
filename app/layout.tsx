@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className='font-outfit min-h-screen dark:bg-zinc-800 bg-zinc-200'>{children}</body>
+      <body className='font-outfit dark:bg-zinc-800 bg-zinc-200'>{children}</body>
     </html>
   );
 }

@@ -98,7 +98,7 @@ export default function Home() {
       <div className="flex justify-center items-center visible xl:invisible">
         <p className="font-bold text-3xl">Site Feito Somente para Dispositivos Desktop</p>
       </div>
-      <div className=" grid grid-cols-3 grid-rows-3 p-10 gap-7">
+      <div className="h-0 xl:h-full xl:grid xl:grid-cols-3 xl:grid-rows-3 xl:p-10 xl:gap-7">
         <BannerComplit
           link='https://aprovafacilbc.com.br/'
           src={Aprova}
