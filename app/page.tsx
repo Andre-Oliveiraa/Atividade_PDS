@@ -91,7 +91,7 @@ export default function Home() {
           <p className="text-3xl text-cyan-700 font-extrabold">Serviços da Prefeitura</p>
           <p className="text-xl text-zinc-800 font-bold">Balneário Camboriú</p>
         </div>
-        <a href="https://github.com/Andre-Oliveiraa?tab=repositories" target="_blank" rel="noopener noreferrer" className="bg-zinc-400 w-12 h-12 flex justify-center items-center rounded-full hover:bg-zinc-800 hover:text-zinc-300 transition-all">
+        <a href="https://github.com/Andre-Oliveiraa/Atividade_PDS" target="_blank" rel="noopener noreferrer" className="bg-zinc-400 w-12 h-12 flex justify-center items-center rounded-full hover:bg-zinc-800 hover:text-zinc-300 transition-all">
           <Github />
         </a>
       </HeaderContent>
